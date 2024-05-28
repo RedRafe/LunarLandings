@@ -33,3 +33,5 @@ data.raw.recipe["recipe-space-fluid-wagon"].ingredients = {
   {"storage-tank", 1},
   {"pipe", 8},
 }
+
+require "__LunarLandings__.compatibility.frost-biters.data-updates"

@@ -104,4 +104,12 @@ function data_util.set_item_subgroup_order(subgroup_name, order)
   item_subgroup.order = order
 end
 
+function data_util.whitelist_recipes(module, recipes)
+  LL_modules = LL_modules or {}
+  LL_modules[module] = LL_modules[module] or {}
+  for _, recipe in pairs(recipes) do
+    LL_modules[module][recipe] = true
+  end
+end
+
 return data_util

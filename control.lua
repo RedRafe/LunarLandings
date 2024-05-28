@@ -17,5 +17,15 @@ handler.add_libraries{
   require "scripts.mass-driver",
   require "scripts.mass-driver-requester",
   require "scripts.collision-test",
+  require "scripts.compatibility"
 }
 
+-- Frozen DLC
+if script.active_mods["Cold_biters"] and script.active_mods["space-exploration-graphics-3"] then
+  handler.add_libraries{
+    require "scripts.graviton-matter-obliterator",
+    require "scripts.radiation-shield",
+    require "scripts.reclaim-center",
+    require "scripts.research-center",
+  }
+end
