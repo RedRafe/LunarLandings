@@ -37,3 +37,5 @@ for _, tech in pairs(data.raw.technology) do
     end
   end
 end
+
+require "__LunarLandings__.prototypes.modules-final-fixes"

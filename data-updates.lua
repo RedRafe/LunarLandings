@@ -36,3 +36,4 @@ data.raw.recipe["recipe-space-fluid-wagon"].ingredients = {
 }
 
 require "__LunarLandings__.compatibility.aai-industry.data-updates"
+require "__LunarLandings__.compatibility.frost-biters.data-updates"

@@ -232,4 +232,12 @@ function x_util.set_item_subgroup_order(subgroup_name, order)
   item_subgroup.order = order
 end
 
+function x_util.whitelist_recipes(module, recipes)
+  LL_modules = LL_modules or {}
+  LL_modules[module] = LL_modules[module] or {}
+  for _, recipe in pairs(recipes) do
+    LL_modules[module][recipe] = true
+  end
+end
+
 return x_util

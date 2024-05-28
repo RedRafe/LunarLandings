@@ -49,3 +49,16 @@ require "__LunarLandings__.prototypes.recipe-changes"
 require "__LunarLandings__.prototypes.tips-and-tricks"
 require "__LunarLandings__.prototypes.sounds"
 --require "__LunarLandings__.prototypes.construction-bots"
+
+-- Frozen DLC
+if mods["Cold_biters"] and mods["space-exploration-graphics-3"] then
+  require "__LunarLandings__.prototypes.graviton-matter-obliterator-remote"
+  require "__LunarLandings__.prototypes.graviton-matter-obliterator"
+  require "__LunarLandings__.prototypes.helium"
+  require "__LunarLandings__.prototypes.radiation-shield"
+  require "__LunarLandings__.prototypes.radioactive-projectile"
+  require "__LunarLandings__.prototypes.radioactivity-center"
+  require "__LunarLandings__.prototypes.reclaim-center"
+  require "__LunarLandings__.prototypes.research-center"
+  require "__LunarLandings__.prototypes.terraform-hub"
+end

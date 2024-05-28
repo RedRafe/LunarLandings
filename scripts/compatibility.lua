@@ -1,5 +1,6 @@
 --local better_victory = require "compatibility.better-victory-screen.control"
 --local disco_science  = require "compatibility.disco-science.control"
+local frost_biters   = require "compatibility.frost-biters.control"
 local milestones     = require "compatibility.milestones.control"
 local picker_dollies = require "compatibility.picker-dollies.control"
 
@@ -10,9 +11,10 @@ Compatibility.on_load = function()
   picker_dollies.load()
 end
 
---[[Compatibility.on_init = function()
-  disco_science.init()
-end]]
+Compatibility.on_init = function()
+  frost_biters.init()
+  --disco_science.init()
+end
 
 Compatibility.preload_remote_interface = function()
   local remote_functions = {}
